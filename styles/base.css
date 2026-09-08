@@ -15,6 +15,7 @@ body {
 h1, h2 {
     font-family: 'Poppins', sans-serif;
 }
+
 /* Header */
 header {
     background-color: #1b3a5c;
@@ -30,6 +31,7 @@ header {
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
+
 /* Navigation */
 nav {
     display: flex;
@@ -52,18 +54,24 @@ nav a:hover {
     color: #d9a441;
     border-bottom: 2px solid #d9a441;
 }
+
 /* Main content */
 main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
 }
 
 main h1 {
     text-align: center;
     color: #1b3a5c;
     margin-bottom: 2rem;
+    grid-column: 1 / -1;
 }
+
 /* Cards */
 .card {
     display: grid;
@@ -94,16 +102,6 @@ main h1 {
 .card p {
     color: #333333;
 }
-/* Grid layout for cards side by side */
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
-main h1 {
-    grid-column: 1 / -1;
-}
 
 /* Footer */
 footer {
@@ -116,4 +114,29 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+}
+.card h3 {
+    color: #1b3a5c;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.card ul {
+    list-style-position: inside;
+    padding-left: 0.5rem;
+}
+
+.card ul li {
+    margin-bottom: 0.6rem;
+}
+
+.card ul a {
+    color: #1b3a5c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card ul a:hover {
+    color: #d9a441;
+    text-decoration: underline;
 }
