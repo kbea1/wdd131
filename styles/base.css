@@ -118,6 +118,34 @@ main h1 {
     max-width: 120px;
     flex-shrink: 0;
 }
+.flag-content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.flag-content p {
+    flex: 1;
+}
+
+.flag-figure {
+    flex-shrink: 0;
+    width: 120px;
+    text-align: center;
+}
+
+.flag-figure img {
+    width: 120px;
+    max-width: 120px;
+    margin: 0;
+}
+
+.flag-figure figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #1b3a5c;
+    margin-top: 0.3rem;
+}
 
 .card p {
     color: #333333;
