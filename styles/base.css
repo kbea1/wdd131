@@ -103,6 +103,22 @@ main h1 {
     margin: 0 auto;
 }
 
+.about-content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.about-content p {
+    flex: 1;
+}
+
+.about-content img {
+    width: 120px;
+    max-width: 120px;
+    flex-shrink: 0;
+}
+
 .card p {
     color: #333333;
 }
