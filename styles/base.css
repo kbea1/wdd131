@@ -87,9 +87,12 @@ main h1 {
 }
 
 .card h2 {
-    color: #1b3a5c;
-    border-bottom: 2px solid #d9a441;
-    padding-bottom: 0.5rem;
+    background-color: #1b3a5c;
+    color: #ffffff;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
 }
 
 .card img {
