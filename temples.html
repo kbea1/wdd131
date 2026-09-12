@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album – Karla Loyaga</title>
+    <meta name="description" content="A responsive picture album of temple images for WDD 131, Karla Loyaga.">
+    <meta name="author" content="Karla Loyaga">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 700px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2 class="site-title">Temple Album</h2>
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span id="hamburger-icon">☰</span>
+        </button>
+        <nav id="primary-nav">
+            <a href="index.html">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+        <div class="gallery">
+            <figure>
+                <img src="images/Lima_Peru_Temple.jpg" alt="Lima Peru Temple" loading="lazy" width="600" height="450">
+                <figcaption>Lima Peru Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/trujillo-peru-temple.jpg" alt="Trujillo Peru Temple" loading="lazy" width="600" height="450">
+                <figcaption>Trujillo Peru Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/arequipa-temple.jpg" alt="Arequipa Peru Temple" loading="lazy" width="600" height="450">
+                <figcaption>Arequipa Peru Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/lima-peru-los-olivos-temple.jpg" alt="Lima Peru Los Olivos Temple" loading="lazy" width="600" height="450">
+                <figcaption>Lima Peru Los Olivos Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/san-diego-california-temple.jpg" alt="San Diego California Temple" loading="lazy" width="600" height="450">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/payson-utah-temple.jpg" alt="Payson Utah Temple" loading="lazy" width="600" height="450">
+                <figcaption>Payson Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/draper-utah-temple.jpg" alt="Draper Utah Temple" loading="lazy" width="600" height="450">
+                <figcaption>Draper Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/oquirrh-mountain-utah-temple.jpg" alt="Oquirrh Mountain Utah Temple" loading="lazy" width="600" height="450">
+                <figcaption>Oquirrh Mountain Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/washington-d.c.-temple.jpg" alt="Washington D.C. Temple" loading="lazy" width="600" height="450">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Karla Loyaga, Trujillo, Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

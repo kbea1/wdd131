@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2b2b2b;
+    background-color: #f5f3ef;
+    line-height: 1.6;
+}
+
+h1, h2, .site-title {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Header */
+header {
+    background-color: #274b60;
+    color: #ffffff;
+    padding: 1rem;
+    position: relative;
+}
+
+.site-title {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.hamburger {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Navigation - hidden by default on mobile */
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.nav-open {
+    display: flex;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e0b354;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    text-align: center;
+    color: #274b60;
+    margin-bottom: 1.5rem;
+}
+
+/* Gallery - one column on mobile */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background-color: #1c2f3a;
+    display: block;
+}
+
+figcaption {
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 500;
+    color: #274b60;
+}
+
+/* Footer */
+footer {
+    background-color: #274b60;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}

@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.site-title {
+    text-align: left;
+}
+
+.hamburger {
+    display: none;
+}
+
+nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: 0;
+}
+
+nav a {
+    border-top: none;
+    padding: 0.3rem 0.6rem;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #e0b354;
+    background-color: transparent;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
