@@ -1,0 +1,51 @@
+/* ============================
+   LARGE SCREEN STYLES
+   ============================ */
+@media screen and (min-width: 700px) {
+    .site-title {
+        font-size: 2.5rem;
+    }
+
+    main {
+        max-width: 1100px;
+    }
+
+    /* Hero wrapper becomes a positioning context */
+    .hero-wrapper {
+        position: relative;
+    }
+
+    .data-card,
+    .weather-card {
+        position: absolute;
+        width: 260px;
+    }
+
+    .data-card {
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .weather-card {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .data-card p,
+    .weather-card p {
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-card h2::after {
+        content: "\26C5";
+        font-size: 1.2rem;
+    }
+
+    .intro {
+        padding: 2.5rem 1rem;
+    }
+}

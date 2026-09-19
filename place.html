@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peru - Country Page</title>
+    <meta name="description" content="Explore Peru: its landscapes, culture, and current weather conditions.">
+    <meta name="author" content="Karla Loyaga">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Peru</h1>
+    </header>
+
+    <main>
+        <section class="hero-wrapper">
+            <picture>
+                <source media="(min-width: 700px)" srcset="images/peru-hero-large.webp">
+                <img src="images/peru-hero-small.webp" alt="Llamas at Machu Picchu, Peru" width="800" height="600">
+            </picture>
+
+            <div class="data-card">
+                <h2>Data</h2>
+                <p><span class="label">Area:</span> <span class="value">1,285,216 sq km</span></p>
+                <p><span class="label">Population:</span> <span class="value">34,000,000</span></p>
+                <p><span class="label">Capital:</span> <span class="value">Lima</span></p>
+                <p><span class="label">Languages:</span> <span class="value">Spanish, Quechua</span></p>
+                <p><span class="label">Currency:</span> <span class="value">Peruvian Sol</span></p>
+                <p><span class="label">Time Zone:</span> <span class="value">UTC-5</span></p>
+                <p><span class="label">Calling Code:</span> <span class="value">+51</span></p>
+                <p><span class="label">Internet TLD:</span> <span class="value">.pe</span></p>
+            </div>
+
+            <div class="weather-card">
+                <h2>Weather<img class="weather-icon-mobile" src="images/weather-cloud.svg" alt="Cloudy weather icon" width="32" height="32"></h2>
+                <p><span class="label">Temperature:</span> <span id="temp" class="value">10°C</span></p>
+                <p><span class="label">Wind Speed:</span> <span id="wind" class="value">20 km/h</span></p>
+                <p><span class="label">Wind Chill:</span> <span id="windchill" class="value"></span></p>
+                <p><span class="label">Condition:</span> <span class="value">Partly Cloudy</span></p>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>About Peru</h2>
+            <p>Peru is a country in South America known for its rich history, ancient Inca ruins like Machu Picchu, diverse landscapes ranging from coastal deserts to the Andes mountains and the Amazon rainforest, and a vibrant culture that blends indigenous, Spanish, and other influences.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Karla Loyaga, Trujillo, Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
