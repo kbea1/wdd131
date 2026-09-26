@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album – Karla Loyaga</title>
+    <meta name="description" content="A responsive picture album of temple images for WDD 131, Karla Loyaga.">
+    <meta name="author" content="Karla Loyaga">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2 class="site-title">Temple Album</h2>
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span id="hamburger-icon">☰</span>
+        </button>
+        <nav id="primary-nav">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+        <div class="gallery">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Karla Loyaga, Trujillo, Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
