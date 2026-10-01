@@ -1,0 +1,115 @@
+:root {
+  --forest: #1f4d3a;
+  --cream: #f7f5ef;
+  --amber: #c9731a;
+  --ink: #232323;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", Georgia, serif;
+}
+
+header {
+  background-color: var(--forest);
+  color: var(--cream);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h2 {
+  color: var(--forest);
+  border-bottom: 3px solid var(--amber);
+  padding-bottom: 0.25rem;
+}
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.swatches li {
+  flex: 1 1 12rem;
+  border: 1px solid var(--ink);
+  background-color: #ffffff;
+}
+
+.swatches span {
+  display: block;
+  height: 3rem;
+}
+
+.swatches p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.sw-forest { background-color: var(--forest); }
+.sw-cream { background-color: var(--cream); }
+.sw-amber { background-color: var(--amber); }
+.sw-ink { background-color: var(--ink); }
+
+footer {
+  background-color: var(--forest);
+  color: var(--cream);
+  text-align: center;
+  padding: 1rem;
+}
+.wireframes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.wf {
+  margin: 0;
+  border: 2px solid var(--forest);
+  background-color: #ffffff;
+  padding: 0.5rem;
+}
+
+.wf div {
+  border: 1px dashed var(--ink);
+  background-color: var(--cream);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.wf-mobile {
+  width: 14rem;
+}
+
+.wf-desktop {
+  flex: 1 1 24rem;
+}
+
+.wf-row {
+  display: flex;
+  gap: 0.5rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.wf-row div {
+  flex: 1;
+  margin-bottom: 0.5rem;
+}
