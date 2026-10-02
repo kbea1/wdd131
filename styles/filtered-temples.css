@@ -81,7 +81,8 @@ main h1 {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
+    align-items: start;
 }
 
 figure {
@@ -95,17 +96,32 @@ figure {
 figure img {
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 8 / 5;
     object-fit: cover;
     background-color: #1c2f3a;
     display: block;
 }
 
 figcaption {
-    padding: 0.75rem;
-    text-align: center;
-    font-weight: 500;
+    padding: 1rem 1.25rem;
+    text-align: left;
+}
+
+figcaption h3 {
     color: #274b60;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+figcaption p {
+    font-size: 0.85rem;
+    color: #2b2b2b;
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+}
+
+figcaption p:last-child {
+    margin-bottom: 0;
 }
 
 /* Footer */
