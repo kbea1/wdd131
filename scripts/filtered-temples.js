@@ -1,3 +1,13 @@
+// Hamburger menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const primaryNav = document.getElementById('primary-nav');
+
+menuToggle.addEventListener('click', () => {
+  primaryNav.classList.toggle('nav-open');
+  const isOpen = primaryNav.classList.contains('nav-open');
+  menuToggle.setAttribute('aria-expanded', isOpen);
+});
+
 // Footer: current year and last modified date
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
