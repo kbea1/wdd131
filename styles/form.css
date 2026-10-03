@@ -1,0 +1,200 @@
+:root {
+    --color-primary: #3d2645;
+    --color-primary-dark: #2a1b30;
+    --color-accent: #e0b354;
+    --color-white: #ffffff;
+    --color-text: #2b2b2b;
+    --color-bg: #f5f3ef;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: var(--font-heading);
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    color: var(--color-primary-dark);
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+select:required:invalid {
+    color: #595959;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: 500;
+    color: var(--color-primary-dark);
+    padding: 0 0.5rem;
+}
+
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+}
+
+.rating label {
+    display: inline;
+    font-weight: 400;
+    margin: 0;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-item label {
+    display: inline;
+    font-weight: 400;
+    margin: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-primary-dark);
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        max-width: 700px;
+    }
+
+    form {
+        padding: 2.5rem;
+    }
+}
+.confirmation {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary-dark);
+    margin: 1.5rem 0 1rem;
+}
+
+.confirmation p {
+    margin-bottom: 0.5rem;
+}
+
+.confirmation .label {
+    font-weight: 500;
+    color: var(--color-primary-dark);
+}
+
+.confirmation .counter {
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+.button-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: var(--color-primary-dark);
+}

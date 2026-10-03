@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted – Karla Loyaga</title>
+    <meta name="description" content="Confirmation page after submitting a product review for WDD 131, Karla Loyaga.">
+    <meta name="author" content="Karla Loyaga">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+
+    <main>
+        <section class="confirmation">
+            <p>Your product review has been submitted successfully.</p>
+
+            <h2>Review Summary</h2>
+            <p><span class="label">Product:</span> <span id="summaryProduct"></span></p>
+            <p><span class="label">Rating:</span> <span id="summaryRating"></span></p>
+            <p><span class="label">Date of Installation:</span> <span id="summaryDate"></span></p>
+            <p><span class="label">Features:</span> <span id="summaryFeatures"></span></p>
+            <p><span class="label">Name:</span> <span id="summaryUsername"></span></p>
+
+            <p class="counter">Total reviews submitted: <span id="reviewCount"></span></p>
+
+            <a href="form.html" class="button-link">Submit Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Karla Loyaga, Trujillo, Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
