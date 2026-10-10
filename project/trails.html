@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse hiking trails in the Andes of Peru and filter them by difficulty, from easy walks to challenging full-day climbs.">
+  <title>Andes Trail Club | Trails</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&amp;family=Open+Sans:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Andes Trail Club logo: a green mountain peak with an amber sun" width="90" height="90">
+    <p class="site-name">Andes Trail Club</p>
+    <button id="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trails.html" aria-current="page">Trails</a></li>
+        <li><a href="gear.html">Gear</a></li>
+        <li><a href="index.html#join">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Trails</h1>
+    <p>Choose a difficulty to see the trails that fit your experience.</p>
+    <p>
+      <label for="level-filter">Difficulty</label>
+      <select id="level-filter" name="level-filter">
+        <option value="all">All trails</option>
+        <option value="Easy">Easy</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Challenging">Challenging</option>
+      </select>
+    </p>
+    <h2>Available trails</h2>
+    <div id="trail-list" aria-live="polite"></div>
+  </main>
+  <footer>
+    <p>&copy; 2026 Andes Trail Club</p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
