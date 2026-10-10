@@ -46,7 +46,7 @@ function handleJoin(event) {
 
   members.push(member);
   localStorage.setItem(`members`, JSON.stringify(members));
-  formMessage.textContent = `Welcome, ${member.name}! You joined as a ${member.level} hiker.`;
+    formMessage.textContent = `Welcome, ${member.name}! You joined at the ${member.level} level.`;
   joinForm.reset();
 }
 
